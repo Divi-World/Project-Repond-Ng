@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1766 300"
+  width="1766"
+  height="300"
+  role="img"
+  aria-labelledby="logo-title logo-desc"
+>
+  <title id="logo-title">ProjectRespond NG</title>
+  <desc id="logo-desc">ProjectRespond NG logo with a black rounded-square icon and lime green check mark.</desc>
+
+  <!-- Icon -->
+  <rect x="48" y="25" width="226" height="243" rx="64" fill="#000000"/>
+
+  <!-- Check mark -->
+  <path
+    d="M116 159
+       C126 169 136 180 147 192
+       C153 199 162 202 168 194
+       C184 171 199 142 215 113
+       C221 102 218 97 208 100
+       C196 104 187 114 181 125
+       L161 160
+       L147 148
+       C139 141 129 140 120 146
+       C114 150 112 155 116 159 Z"
+    fill="#A8F044"
+  />
+
+  <!-- Wordmark -->
+  <text
+    x="329"
+    y="201"
+    fill="#0B1E2D"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="139"
+    font-weight="900"
+    letter-spacing="-4"
+  >ProjectRespond NG</text>
+</svg>

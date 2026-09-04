@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://projectrespond-ng.vercel.app/sitemap.xml

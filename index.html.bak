@@ -799,7 +799,7 @@
           <h1>Stop chasing people to fill your <span>questionnaire.</span></h1>
           <p class="lead">Send your online questionnaire, choose how many suitable respondents you need, and let ProjectRespond NG coordinate the response collection for your undergraduate project.</p>
           <div class="actions">
-            <a class="btn green wa" data-msg="Hello ProjectRespond NG. I want to place an order for questionnaire respondents. Please guide me." href="#">Send My Questionnaire</a>
+            <a class="btn green" id="openOrderModal" href="#">Send My Questionnaire</a>
             <a class="btn" href="#packages">View Packages</a>
           </div>
         </div>
@@ -1014,10 +1014,64 @@
           <small>READY TO START?</small>
           <h2>Your questionnaire is ready. Now get the respondents you need.</h2>
         </div>
-            <a class="btn green wa" data-msg="Hello ProjectRespond NG. I want to place an order for questionnaire respondents. Please guide me." href="#">Send My Questionnaire →</a>
+        <a class="btn green" id="ctaOpenOrderModal" href="#">Send My Questionnaire →</a>
       </div>
     </section>
   </main>
+
+  <!-- ===== ORDER MODAL ===== -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <h2>Place Your Order</h2>
+      <p>Fill in the details below, and we'll open WhatsApp with a pre‑filled message for you to confirm.</p>
+      <form id="orderForm">
+        <div class="formgrid">
+          <div class="field full">
+            <label for="oname">Your Full Name *</label>
+            <input id="oname" required placeholder="e.g., Chisom Nweze">
+          </div>
+          <div class="field full">
+            <label for="oemail">Email Address *</label>
+            <input id="oemail" type="email" required placeholder="chisom@example.com">
+          </div>
+          <div class="field full">
+            <label for="olink">Questionnaire Link *</label>
+            <input id="olink" required placeholder="https://forms.google.com/...">
+          </div>
+          <div class="field">
+            <label for="opackage">Package *</label>
+            <select id="opackage" required>
+              <option value="">Select package</option>
+              <option value="20 Responses — ₦5,000">20 Responses — ₦5,000</option>
+              <option value="50 Responses — ₦10,000">50 Responses — ₦10,000</option>
+              <option value="100 Responses — ₦18,000" selected>100 Responses — ₦18,000 (Most Popular)</option>
+              <option value="150 Responses — ₦25,000">150 Responses — ₦25,000</option>
+              <option value="200 Responses — ₦32,000">200 Responses — ₦32,000</option>
+              <option value="Custom">Custom (discuss on WhatsApp)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="odeadline">Deadline *</label>
+            <input id="odeadline" type="date" required>
+          </div>
+          <div class="field full">
+            <label for="ocriteria">Respondent Criteria</label>
+            <input id="ocriteria" placeholder="e.g., Nigerian undergraduates, age 18-25, any course">
+          </div>
+          <div class="field full">
+            <label for="onotes">Additional Notes (optional)</label>
+            <textarea id="onotes" rows="3" placeholder="Any special instructions..."></textarea>
+          </div>
+        </div>
+        <label class="consent">
+          <input id="oconsent" type="checkbox" required>
+          I understand that this order will be processed via WhatsApp and I will receive a confirmation message there.
+        </label>
+        <button class="btn green" type="submit">Send Order via WhatsApp →</button>
+      </form>
+    </div>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
